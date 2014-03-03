@@ -1,0 +1,23 @@
+<h1>10. Tool Tips</h1>
+
+<p>Tooltipster: <a href="http://calebjacob.com/tooltipster/">http://calebjacob.com/tooltipster</a></p>
+
+<% styleguide_block  '10' do %>
+<div>
+	<button class="tooltip tooltip-nw" title="north west">NW</button>
+	<button class="tooltip tooltip-n" title="north">N</button>
+	<button class="tooltip tooltip-ne" title="north east">NE</button>
+</div>
+<div>
+	<button class="tooltip tooltip-w" title="west">W</button>
+	<button style="visibility: hidden;" title="south">&emsp;&emsp;</button>
+	<button class="tooltip tooltip-e" title="east">E</button>
+</div>
+<div>
+	<button class="tooltip tooltip-sw" title="south west">SW</button>
+	<button class="tooltip tooltip-s" title="south">S</button>
+	<button class="tooltip tooltip-se" title="south east">SE</button>
+</div>
+<br>
+<button class="tooltip tooltip-e tooltip-mouse" title="activates on click">click my tooltip</button>
+<% end %>

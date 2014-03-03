@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styleguide</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/layout.css">
+  <link rel="stylesheet" href="/stylesheets/color.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+  <header>
+    Styleguide
+  </header>
+
+  <div class="kss-wrap clearfix">
+
+    <div class="kssgw">
+      <div class="kssg one-quarter">
+        <nav role="main">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/base">Base</a></li>
+						<li><a href="/text-variations">Text Variations</a></li>
+						<li><a href="/color">Color</a></li>
+						<li><a href="/grid">Grid</a></li>
+						<li><a href="/forms">Forms</a></li>
+						<li><a href="/nav">Nav</a></li>
+						<li><a href="/buttons">Buttons</a></li>
+						<li><a href="/alerts">Alerts</a></li>
+						<li><a href="/progress-bars">Progress Bars</a></li>
+						<li><a href="/tool-tips">Tool Tips</a></li>
+          </ul>
+        </nav>
+      </div><!--
+
+			--><div class="kssg three-quarters">
+        <%= yield %>
+      </div>
+		</div><!-- .kssgw -->
+  </div><!-- /#wrapper -->
+
+  <script src="/javascripts/kss.js"></script>
+
+</body>
+</html>
