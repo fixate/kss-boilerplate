@@ -1,4 +1,8 @@
-kss-boilerplate
-===============
+# Example Styleguide
 
-A boilerplate for kick starting KSS styleguides.
+This application is an example of a living styleguide, generated from KSS documented styles.
+
+Run it with:
+
+    bundle install
+    bundle exec ruby app.rb
