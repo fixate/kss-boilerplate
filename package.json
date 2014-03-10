@@ -1,0 +1,15 @@
+{
+  "author": "Fixate",
+  "name": "kss-boilerplate",
+  "version": "0.2.0",
+  "dependencies": {},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/fixate/kss-boilerplate"
+	},
+  "devDependencies": {
+    "grunt": "^0.4.3",
+    "grunt-bump": "0.0.13",
+    "grunt-shell": "^0.6.4"
+  }
+}
