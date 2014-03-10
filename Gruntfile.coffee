@@ -40,8 +40,7 @@ module.exports = (grunt) ->
 		bump:
 			options:
 				files: [
-					'package.json',
-					'bower.json'
+					'package.json'
 				]
 				commit: true
 				commitMessage: 'bump version to %VERSION%'
