@@ -8,36 +8,26 @@
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin:1em 0; }
-li, dd { margin-left:5%; }
-fieldset { padding: .5em; }
-select option{ padding:0 5px; }
+
+body {
+	font-family: Tahoma;
+	margin: 0;
+}
 
 .access{ display:none; } /* For accessibility related elements */
 .clear{ clear:both; height:0px; font-size:0px; line-height:0px; overflow:hidden; }
-a{ outline:none; }
-a img{ border:none; }
 
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+.kss-cf:before,
+.kss-cf:after{
+		content:"";
+		display:table;
+		clear:both;
 }
-* html .clearfix {height: 1%;}
-.clearfix {display:inline-block;}
-.clearfix {display: block;}
 
 /* @end */
 
-body{
-  font-family:Helvetica, Arial, sans-serif;
-  font-size:14px;
-}
-
-header{
-  padding:10px;
+.kss-header {
+  padding: 1em 0;
 
   font-size:16px;
   color:#666;
@@ -52,19 +42,19 @@ header{
 	padding: 0 1.5em;
 }
 
-nav[role=main]{
-  /* float:left;*/
-  /* margin-left:-200px;*/
-  /* width:160px;*/
+.kss-nav {
+	padding-top: 1em;
 }
-nav ul{
-  margin-left:10px;
+
+.kss-nav ul{
+	margin-left: 0;
+	padding-left: 0;
 }
-nav li{
+.kss-nav li{
   list-style-type:none;
   margin:10px 0;
 }
-nav li a{
+.kss-nav li a{
   text-decoration:none;
   color:#666;
 }
