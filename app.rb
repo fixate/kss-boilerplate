@@ -69,8 +69,10 @@ helpers do
   # Generates a styleguide block. A little bit evil with @_out_buf, but
   # if you're using something like Rails, you can write a much cleaner helper
   # very easily.
-  def styleguide_block(section, &block)
+  def styleguide_block(section, show_example = true, show_escaped = true, &block)
     @section = @styleguide.section(section)
+		@show_example = show_example
+		@show_escaped = show_escaped
     @example_html = capture{ block.call }
     @escaped_html = ERB::Util.html_escape @example_html
     @_out_buf << erb(:_styleguide_block)
