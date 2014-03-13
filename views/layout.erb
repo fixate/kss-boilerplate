@@ -9,15 +9,17 @@
 </head>
 <body>
 
-  <header>
-    Styleguide
+  <header class="kss-header kss-content">
+    <div class="kss-wrap">
+      Styleguide
+    </div>
   </header>
 
-  <div class="kss-wrap clearfix">
+  <div class="kss-wrap kss-cf">
 
-    <div class="kssgw">
-      <div class="kssg one-quarter">
-        <nav role="main">
+    <div class="kss-gw">
+      <div class="kss-g one-quarter">
+        <nav class="kss-nav" role="main">
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/base">Base</a></li>
@@ -34,7 +36,7 @@
         </nav>
       </div><!--
 
-			--><div class="kssg three-quarters">
+			--><div class="kss-g three-quarters">
         <%= yield %>
       </div>
 		</div><!-- .kssgw -->
