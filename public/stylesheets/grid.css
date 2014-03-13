@@ -3,3 +3,10 @@ Grid
 
 Styleguide 4
 */
+
+.kss-element .g div {
+	background-color: whitesmoke;
+	text-align: center;
+	padding: 1em;
+}
+

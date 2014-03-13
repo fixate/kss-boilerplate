@@ -43,6 +43,7 @@ end
 
 get '/grid' do
   @styleguide = Kss::Parser.new('public/stylesheets')
+	@use_kss_stylesheet = true
   erb :grid
 end
 
