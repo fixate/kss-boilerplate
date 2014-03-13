@@ -27,6 +27,7 @@ end
 
 get '/color' do
   @styleguide = Kss::Parser.new('public/stylesheets')
+	@use_kss_stylesheet = true
   erb :color
 end
 
@@ -77,6 +78,11 @@ helpers do
     @escaped_html = ERB::Util.html_escape @example_html
     @_out_buf << erb(:_styleguide_block)
   end
+
+	# dynamically add stylesheets if the `get` block defines @use_kss_stylesheet as true
+	def get_stylesheets
+		@stylesheet_link << erb(:_stylesheet_link) if @use_kss_stylesheet
+	end
 
   # Captures the result of a block within an erb template without spitting it
   # to the output buffer.
