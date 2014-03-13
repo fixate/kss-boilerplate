@@ -22,33 +22,26 @@ Primary colours
 Styleguide 3.2
 */
 
-.cf:before,
-.cf:after {
-	content:"";
-	display:table;
-	clear:both;
-}
-
-.color-container {
+.kss-color-container {
 	float: left;
 	width: 20%;
 	padding-left: 1.5em;
 	margin-left: -1.5em;
 }
 
-.ratio-object {
+.kss-ratio-object {
 	position: relative;
 	overflow: hidden;
 	border: 1px solid #f1f1f1;
 }
 
-.ratio-object:before {
+.kss-ratio-object:before {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
 }
 
-.ratio-object__inner {
+.kss-ratio-object__inner {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -57,7 +50,7 @@ Styleguide 3.2
 	text-align: center;
 }
 
-.ratio-object__inner:before {
+.kss-ratio-object__inner:before {
 	content: "";
 	display: inline-block;
 	height: 100%;
