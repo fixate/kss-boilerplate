@@ -11,17 +11,21 @@
       </ul>
     <% end %>
   </div>
+	<% if @show_example %>
   <div class="styleguide-element">
     <%= @example_html %>
   </div>
+	<% end %>
   <% @section.modifiers.each do |modifier| %>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name"><%= modifier.name %></span>
       <%= @example_html.sub('$modifier_class', " #{modifier.class_name}") %>
     </div>
   <% end %>
+	<% if @show_escaped %>
   <div class="styleguide-html">
     <pre class="styleguide-code"><%= @escaped_html %></pre>
   </div>
+	<% end %>
 
 </div>
