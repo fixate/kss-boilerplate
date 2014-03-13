@@ -81,7 +81,7 @@ helpers do
 
 	# dynamically add stylesheets if the `get` block defines @use_kss_stylesheet as true
 	def get_stylesheets
-		@stylesheet_link << erb(:_stylesheet_link) if @use_kss_stylesheet
+		@_out_buf << erb(:_stylesheet_link) if @use_kss_stylesheet
 	end
 
   # Captures the result of a block within an erb template without spitting it
