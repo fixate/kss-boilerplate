@@ -152,7 +152,7 @@ h1.styleguide {
 /**
  * Grid wrapper
  */
-.kssgw, .kssgw_-rev, .kssgw_-full, .kssgw_-center, .kssgw, .kssgw_-middle {
+.kss-gw, .kss-gw_-rev, .kss-gw_-full, .kss-gw_-center, .kss-gw, .kss-gw_-middle {
 	margin-left: -32px;
 	margin-left: -1.77778rem;
 	list-style: none;
@@ -161,13 +161,13 @@ margin-bottom: 0; }
 /**
  * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
-.kssgw > .kssgw, .kssgw_-rev > .kssgw, .kssgw_-full > .kssgw, .kssgw_-center > .kssgw, .kssgw > .kssgw, .kssgw_-middle > .kssgw, .kssgw > .kssgw_-rev, .kssgw_-rev > .kssgw_-rev, .kssgw_-full > .kssgw_-rev, .kssgw_-center > .kssgw_-rev, .kssgw > .kssgw_-rev, .kssgw_-middle > .kssgw_-rev, .kssgw > .kssgw_-full, .kssgw_-rev > .kssgw_-full, .kssgw_-full > .kssgw_-full, .kssgw_-center > .kssgw_-full, .kssgw > .kssgw_-full, .kssgw_-middle > .kssgw_-full, .kssgw > .kssgw_-center, .kssgw_-rev > .kssgw_-center, .kssgw_-full > .kssgw_-center, .kssgw_-center > .kssgw_-center, .kssgw > .kssgw_-center, .kssgw_-middle > .kssgw_-center, .kssgw > .kssgw, .kssgw_-rev > .kssgw, .kssgw_-full > .kssgw, .kssgw_-center > .kssgw, .kssgw > .kssgw, .kssgw_-middle > .kssgw, .kssgw > .kssgw_-middle, .kssgw_-rev > .kssgw_-middle, .kssgw_-full > .kssgw_-middle, .kssgw_-center > .kssgw_-middle, .kssgw > .kssgw_-middle, .kssgw_-middle > .kssgw_-middle {
+.kss-gw > .kss-gw, .kss-gw_-rev > .kss-gw, .kss-gw_-full > .kss-gw, .kss-gw_-center > .kss-gw, .kss-gw > .kss-gw, .kss-gw_-middle > .kss-gw, .kss-gw > .kss-gw_-rev, .kss-gw_-rev > .kss-gw_-rev, .kss-gw_-full > .kss-gw_-rev, .kss-gw_-center > .kss-gw_-rev, .kss-gw > .kss-gw_-rev, .kss-gw_-middle > .kss-gw_-rev, .kss-gw > .kss-gw_-full, .kss-gw_-rev > .kss-gw_-full, .kss-gw_-full > .kss-gw_-full, .kss-gw_-center > .kss-gw_-full, .kss-gw > .kss-gw_-full, .kss-gw_-middle > .kss-gw_-full, .kss-gw > .kss-gw_-center, .kss-gw_-rev > .kss-gw_-center, .kss-gw_-full > .kss-gw_-center, .kss-gw_-center > .kss-gw_-center, .kss-gw > .kss-gw_-center, .kss-gw_-middle > .kss-gw_-center, .kss-gw > .kss-gw, .kss-gw_-rev > .kss-gw, .kss-gw_-full > .kss-gw, .kss-gw_-center > .kss-gw, .kss-gw > .kss-gw, .kss-gw_-middle > .kss-gw, .kss-gw > .kss-gw_-middle, .kss-gw_-rev > .kss-gw_-middle, .kss-gw_-full > .kss-gw_-middle, .kss-gw_-center > .kss-gw_-middle, .kss-gw > .kss-gw_-middle, .kss-gw_-middle > .kss-gw_-middle {
 margin-left: 0; }
 
 /**
  * Grid
  */
-.kssgw__item, .kssg {
+.kss-gw__item, .kss-g {
 	display: inline-block;
 	width: 100%;
 	padding-left: 32px;
@@ -177,28 +177,28 @@ vertical-align: top; }
 /**
  * Reversed grids
  */
-.kssgw_-rev {
+.kss-gw_-rev {
 	direction: rtl;
 text-align: right; }
-.kssgw_-rev > .kssgw__item, .kssgw_-rev > .kssg {
+.kss-gw_-rev > .kss-gw__item, .kss-gw_-rev > .kss-g {
 	direction: ltr;
 text-align: left; }
 
 /**
  * Gutterless grids have all the properties of regular grids, minus any spacing.
  */
-.kssgw_-full {
+.kss-gw_-full {
 margin-left: 0; }
-.kssgw_-full > .kssgw__item, .kssgw_-full > .kssg {
+.kss-gw_-full > .kss-gw__item, .kss-gw_-full > .kss-g {
 padding-left: 0; }
 
 /**
  * Centered grids align grid items centrally without needing to use push or pull
  * classes.
  */
-.kssgw_-center {
+.kss-gw_-center {
 text-align: center; }
-.kssgw_-center > .kssgw__item, .kssgw_-center > .kssg {
+.kss-gw_-center > .kss-gw__item, .kss-gw_-center > .kss-g {
 text-align: left; }
 
 
