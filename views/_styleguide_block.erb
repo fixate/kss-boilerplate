@@ -19,7 +19,7 @@
   <% @section.modifiers.each do |modifier| %>
     <div class="kss-element kss-modifier">
       <span class="kss-modifier-name"><%= modifier.name %></span>
-      <%= @example_html.sub('$modifier_class', " #{modifier.class_name}") %>
+      <%= @example_html.gsub('$modifier_class', " #{modifier.class_name}") %>
     </div>
   <% end %>
 	<% if @show_escaped %>
