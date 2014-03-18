@@ -55,6 +55,7 @@ body {
   margin:10px 0;
 }
 .kss-nav li a{
+	display: block;
   text-decoration:none;
   color:#666;
 }
