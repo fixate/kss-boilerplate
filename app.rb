@@ -85,6 +85,15 @@ helpers do
 		@_out_buf << erb(:_stylesheet_link) if @use_kss_stylesheet
 	end
 
+	# use @scripts to define an array of scripts required on any particular page
+	def get_scripts
+		@scripts ||= []
+		@scripts.each do |s|
+			@script = s
+			@_out_buf << erb(:_script_tag)
+		end
+	end
+
   # Captures the result of a block within an erb template without spitting it
   # to the output buffer.
   def capture(&block)
