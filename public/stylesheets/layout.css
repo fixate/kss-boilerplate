@@ -131,9 +131,12 @@ h1.styleguide {
       font-size: 12px;
       font-weight: normal;
       color: #222; }
-  .kss-example > .kss-code {
-    font-family: Monaco, monospace;
-  }
+		.kss-code {
+			font-size: 12px;
+			font-family: Monaco, monospace;
+			tab-size: 2;
+			margin: 0;
+		}
 
 
 
