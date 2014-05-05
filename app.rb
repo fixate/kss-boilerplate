@@ -82,7 +82,7 @@ helpers do
 
 	# dynamically add stylesheets if the `get` block defines @use_kss_spec as true
 	def get_spec
-		@_out_buf << erb(:_spec_css) if @use_kss_spec
+		@_out_buf << erb(:_spec_link) if @use_kss_spec
 	end
 
 	# use @scripts to define an array of scripts required on any particular page
