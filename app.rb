@@ -6,64 +6,64 @@ get '/' do
 end
 
 get '/styleguide' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :styleguide
 end
 
 get '/alerts' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :alerts
 end
 
 get '/base' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :base
 end
 
 get '/buttons' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :buttons
 end
 
 get '/color' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
-	@use_kss_stylesheet = true
+  @styleguide = Kss::Parser.new('public/spec')
+	@use_kss_spec = true
   erb :color
 end
 
 get '/forms' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :forms
 end
 
 get '/gallery' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :gallery
 end
 
 get '/grid' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
-	@use_kss_stylesheet = true
+  @styleguide = Kss::Parser.new('public/spec')
+	@use_kss_spec = true
   erb :grid
 end
 
 get '/nav' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :nav
 end
 
 get '/progress-bars' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :progress_bars
 end
 
 get '/text-variations' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :text_variations
 end
 
 get '/tool-tips' do
-  @styleguide = Kss::Parser.new('public/stylesheets')
+  @styleguide = Kss::Parser.new('public/spec')
   erb :tool_tips
 end
 
@@ -80,9 +80,9 @@ helpers do
     @_out_buf << erb(:_styleguide_block)
   end
 
-	# dynamically add stylesheets if the `get` block defines @use_kss_stylesheet as true
-	def get_stylesheets
-		@_out_buf << erb(:_stylesheet_link) if @use_kss_stylesheet
+	# dynamically add stylesheets if the `get` block defines @use_kss_spec as true
+	def get_spec
+		@_out_buf << erb(:_spec_css) if @use_kss_spec
 	end
 
 	# use @scripts to define an array of scripts required on any particular page
