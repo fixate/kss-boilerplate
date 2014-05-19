@@ -46,17 +46,32 @@
 </form>
 <% end %>
 
+<h2>Selects</h2>
+
+<% styleguide_block '5.2' do %>
+	<select id="" name="">
+	<optgroup label="opt group 1">
+		<option>item 1</option>
+		<option>item 2</option>
+	</optgroup>
+	<optgroup label="opt group 2">
+		<option>item 1</option>
+		<option>item 2</option>
+	</optgroup>
+</select>
+<% end %>
 
 <h2>Radios &amp; Checkboxes</h2>
 
-<% styleguide_block  '5.2' do %>
+<% styleguide_block  '5.3' do %>
 <form action="">
   <div class="field">
-  	<input type="radio" id="radio1" name="radios" checked=""> <label class="field-label" for="radio1">label</label>
-  </div>
-
-  <div class="field">
-  	<input type="radio" id="radio2" name="radios"> <label class="field-label" for="radio2">label</label>
+  	<div>
+  	  <input type="radio" id="radio1" name="radios" checked=""> <label class="field-label" for="radio1">label</label>
+  	</div>
+  	<div>
+  	  <input type="radio" id="radio2" name="radios"> <label class="field-label" for="radio2">label</label>
+  	</div>
   </div>
 
   <div class="field">
@@ -68,25 +83,23 @@
   	</div>
   </div>
 
-  <div>
-  	<div class="field">
-  		<input class="visuallyhidden" type="radio" id="radio3" name="radios" checked=""><label class="field-label" for="radio3"><span class="radio_-custom visuallyhidden-ie8"></span> custom radio</label>
-  	</div>
+	<div class="field">
+		<div>
+		  <input class="visuallyhidden" type="radio" id="radio3" name="radios" checked=""><label class="field-label" for="radio3"><span class="radio_-custom visuallyhidden-ie8"></span> custom radio</label>
+		</div>
+		<div>
+		  <input class="visuallyhidden" type="radio" id="radio4" name="radios"><label class="field-label" for="radio4"><span class="radio_-custom visuallyhidden-ie8"></span> custom radio</label>
+		</div>
+	</div>
 
-  	<div class="field">
-  		<input class="visuallyhidden" type="radio" id="radio4" name="radios"><label class="field-label" for="radio4"><span class="radio_-custom visuallyhidden-ie8"></span> custom radio</label>
-  	</div>
-  </div>
-
-  <div>
-  	<div class="field">
-  		<input class="visuallyhidden" type="checkbox" id="checkbox3" checked=""><label class="field-label" for="checkbox3"><span class="checkbox_-custom visuallyhidden-ie8"></span> custom checkbox</label>
-  	</div>
-
-  	<div class="field">
-  		<input class="visuallyhidden" type="checkbox" id="checkbox4"><label class="field-label" for="checkbox4"><span class="checkbox_-custom visuallyhidden-ie8"></span> custom checkbox</label>
-  	</div>
-  </div>
+	<div class="field">
+		<div>
+			<input class="visuallyhidden" type="checkbox" id="checkbox3" checked=""><label class="field-label" for="checkbox3"><span class="checkbox_-custom visuallyhidden-ie8"></span> custom checkbox</label>
+		</div>
+		<div>
+			<input class="visuallyhidden" type="checkbox" id="checkbox4"><label class="field-label" for="checkbox4"><span class="checkbox_-custom visuallyhidden-ie8"></span> custom checkbox</label>
+		</div>
+	</div>
 </form>
 <% end %>
 
@@ -94,7 +107,7 @@
 
 <h2>Inputs With Prefixes &amp; Suffixes</h2>
 
-<% styleguide_block  '5.3' do %>
+<% styleguide_block  '5.4' do %>
 <form action="">
   <div class="field">
   	<div>
@@ -153,7 +166,7 @@
 
 <p>Pikaday: <a href="https://github.com/dbushell/Pikaday">https://github.com/dbushell/Pikaday</a></p>
 
-<% styleguide_block  '5.4' do %>
+<% styleguide_block  '5.5' do %>
 <div class="field">
 	<input type="text" id="datepicker">
 </div>
@@ -165,7 +178,7 @@
 
 <h3>Simple</h3>
 
-<% styleguide_block  '5.5.1' do %>
+<% styleguide_block  '5.6.1' do %>
 <div class="field">
 	<label for="typehead-1">Tags: </label>
 	<input class="typeahead-1">
@@ -174,7 +187,7 @@
 
 <h3>Custom Data</h3>
 
-<% styleguide_block  '5.5.2' do %>
+<% styleguide_block  '5.6.2' do %>
 <div class="field">
 	<label for="typehead-2">Tags: </label>
 	<input class="typeahead-2">
@@ -186,7 +199,7 @@
 
 <p>Dropzone: <a href="http://www.dropzonejs.com/">http://www.dropzonejs.com</a></p>
 
-<% styleguide_block  '5.6' do %>
+<% styleguide_block  '5.7' do %>
 <form action="/file-upload" class="dropzone">
 	<div class="fallback">
 		<input name="file" type="file" multiple />
@@ -198,7 +211,7 @@
 <h2>WYSIWYG</h2>
 <p>TinyMCE wysiwyg: <a href="http://www.tinymce.com/">http://www.tinymce.com</a></p>
 
-<% styleguide_block  '5.7' do %>
+<% styleguide_block  '5.8' do %>
 <textarea id="" name="" rows="15"span="80" style="width: 100%" class="tinymce">
 	&lt;p&gt;
 	this is some example text that you can edit inside the &lt;strong&gt;tinymce editor&lt;/strong&gt;.
