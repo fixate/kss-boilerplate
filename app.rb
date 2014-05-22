@@ -64,6 +64,7 @@ end
 
 get '/tool-tips' do
   @styleguide = Kss::Parser.new('public/spec')
+	@scripts = ['//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js','//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js', '/js/tool_tips.js']
   erb :tool_tips
 end
 
