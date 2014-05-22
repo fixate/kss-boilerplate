@@ -1,23 +1,26 @@
 <h1>10. Tool Tips</h1>
 
-<p>Tooltipster: <a href="http://calebjacob.com/tooltipster/">http://calebjacob.com/tooltipster</a></p>
+<p>QTip2: <a href="http://qtip2.com/">http://qtip2.com/</a></p>
 
 <% styleguide_block  '10' do %>
 <div>
-	<button class="tooltip tooltip-nw" title="north west">NW</button>
-	<button class="tooltip tooltip-n" title="north">N</button>
-	<button class="tooltip tooltip-ne" title="north east">NE</button>
+	<a title="north west" data-qtip-class="Qtip content.text from data attribute" data-qtip-content="Qtip content.text from data attribute" data-qtip-ready=false data-qtip-title="a title" href="javascript:void(0)" class="js-tooltip" title="north west" data-qtip-my="bottom right" data-qtip-at="top left">NW</a>
+	<a title="north" class="js-tooltip" title="north" data-qtip-my="bottom center" data-qtip-at="top center">N</a>
+	<a title="north east" class="js-tooltip" title="north east" data-qtip-my="bottom left" data-qtip-at="top right">NE</a>
 </div>
 <div>
-	<button class="tooltip tooltip-w" title="west">W</button>
-	<button style="visibility: hidden;" title="south">&emsp;&emsp;</button>
-	<button class="tooltip tooltip-e" title="east">E</button>
+	<a title="content.text" class="js-tooltip" title="west" data-qtip-my="center right" data-qtip-at="center left">W</a>
+	<a style="visibility: hidden;">&emsp;&emsp;</a>
+	<a title="east" class="js-tooltip" title="east" data-qtip-my="center left" data-qtip-at="center right">E</a>
 </div>
 <div>
-	<button class="tooltip tooltip-sw" title="south west">SW</button>
-	<button class="tooltip tooltip-s" title="south">S</button>
-	<button class="tooltip tooltip-se" title="south east">SE</button>
+	<a title="south west" class="js-tooltip" title="south west" data-qtip-my="top right" data-qtip-at="bottom left">SW</a>
+	<a title="south" class="js-tooltip" title="south" data-qtip-my="top center" data-qtip-at="bottom center">S</a>
+	<a title="south east" class="js-tooltip" title="south east" data-qtip-my="top left" data-qtip-at="bottom right">SE</a>
 </div>
 <br>
-<button class="tooltip tooltip-e tooltip-mouse" title="activates on click">click my tooltip</button>
+<a title="content.text" class="js-tooltip" title="activates on click" data-qtip-show-event="click" data-qtip-hide-event="unfocus" data-qtip-my="bottom right" data-qtip-at="top left">click my tooltip</a>
 <% end %>
+
+
+
