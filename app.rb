@@ -52,9 +52,9 @@ get '/nav' do
   erb :nav
 end
 
-get '/progress-bars' do
+get '/progress' do
   @styleguide = Kss::Parser.new('public/spec')
-  erb :progress_bars
+  erb :progress
 end
 
 get '/text-variations' do
