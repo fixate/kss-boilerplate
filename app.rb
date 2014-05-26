@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'kss'
+require 'coffee_script'
 
 get '/' do
   erb :index
@@ -64,8 +65,23 @@ end
 
 get '/tool-tips' do
   @styleguide = Kss::Parser.new('public/spec')
-	@scripts = ['//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js','//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js', '/js/tool_tips.js']
+	@scripts = ['//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js',
+						 '//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js',
+						 '/js/tool_tips.js']
   erb :tool_tips
+end
+
+# if a coffee file exists for a js request, use the coffee file
+#
+# http://jaketrent.com/post/serve-coffeescript-with-sinatra/ or
+# http://railscoder.com/setting-up-sinatra-to-use-slim-sass-and-coffeescript/
+["/js/*.js", "/assets/javascripts/*.js"].each do |path|
+	get path do
+		filename = params[:splat].first
+		ext = !path[/assets/] ? '' : '.js'
+		dir = File.dirname(path)
+		coffee "../public#{dir}/#{filename}#{ext}".to_sym
+	end
 end
 
 helpers do
