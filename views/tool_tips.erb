@@ -2,25 +2,65 @@
 
 <p>QTip2: <a href="http://qtip2.com/">http://qtip2.com/</a></p>
 
-<% styleguide_block  '10' do %>
+<%= styleguide_block  '10' do %>
 <div>
-	<a title="north west" data-qtip-class="Qtip content.text from data attribute" data-qtip-content="Qtip content.text from data attribute" data-qtip-ready=false data-qtip-title="a title" href="javascript:void(0)" class="js-tooltip" title="north west" data-qtip-my="bottom right" data-qtip-at="top left">NW</a>
-	<a title="north" class="js-tooltip" title="north" data-qtip-my="bottom center" data-qtip-at="top center">N</a>
-	<a title="north east" class="js-tooltip" title="north east" data-qtip-my="bottom left" data-qtip-at="top right">NE</a>
+	<a title="north west"
+		href="javascript:void(0)"
+		class="js-tooltip"
+		title="north west"
+		data-qtip-content="Qtip content.text from data attribute"
+		data-qtip-ready=false
+		data-qtip-title="a title"
+		data-qtip-my="bottom right"
+		data-qtip-at="top left">NW</a>
+
+	<a title="north"
+		class="js-tooltip"
+		data-qtip-my="bottom center"
+		data-qtip-at="top center">N</a>
+
+	<a title="north east"
+		class="js-tooltip" title="north east"
+		data-qtip-my="bottom left"
+		data-qtip-at="top right">NE</a>
 </div>
 <div>
-	<a title="content.text" class="js-tooltip" title="west" data-qtip-my="center right" data-qtip-at="center left">W</a>
+	<a title="content.text"
+		class="js-tooltip"
+		title="west"
+		data-qtip-my="center right"
+		data-qtip-at="center left">W</a>
+
 	<a style="visibility: hidden;">&emsp;&emsp;</a>
-	<a title="east" class="js-tooltip" title="east" data-qtip-my="center left" data-qtip-at="center right">E</a>
+
+	<a title="east"
+		class="js-tooltip"
+		data-qtip-my="center left"
+		data-qtip-at="center right">E</a>
 </div>
 <div>
-	<a title="south west" class="js-tooltip" title="south west" data-qtip-my="top right" data-qtip-at="bottom left">SW</a>
-	<a title="south" class="js-tooltip" title="south" data-qtip-my="top center" data-qtip-at="bottom center">S</a>
-	<a title="south east" class="js-tooltip" title="south east" data-qtip-my="top left" data-qtip-at="bottom right">SE</a>
+	<a title="south west"
+		class="js-tooltip"
+		data-qtip-my="top right"
+		data-qtip-at="bottom left">SW</a>
+
+	<a title="south"
+		class="js-tooltip"
+		data-qtip-my="top center"
+		data-qtip-at="bottom center">S</a>
+
+	<a title="south east"
+		class="js-tooltip"
+		data-qtip-my="top left"
+		data-qtip-at="bottom right">SE</a>
 </div>
 <br>
-<a title="content.text" class="js-tooltip" title="activates on click" data-qtip-show-event="click" data-qtip-hide-event="unfocus" data-qtip-my="bottom right" data-qtip-at="top left">click my tooltip</a>
+<a title="activates on click"
+	class="js-tooltip"
+	data-qtip-show-event="click"
+	data-qtip-hide-event="unfocus"
+	data-qtip-my="bottom right"
+	data-qtip-at="top left">click my tooltip</a>
 <% end %>
-
 
 
